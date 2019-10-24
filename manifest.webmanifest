@@ -88,6 +88,10 @@
 		{
 			"src": "[Embedded]",
 			"sizes": "76x76"
+		},
+		{
+			"src": "[Embedded]",
+			"sizes": "2160x2160"
 		}],
 	"screenshots" : [],
 	"generated" : "true"
