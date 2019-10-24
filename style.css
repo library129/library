@@ -34,7 +34,6 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   text-align: left;
   position: relative;
   top: 4rem;
