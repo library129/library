@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Библиотека 129</title>
+  </head>
+  <body>
+    <nav>
+      <button class="button" type="button" name="button" onclick="showHideMenu('menu');">МЕНЮ</button>
+      <div style="display: none;" class="menu-list" id="menu">
+        <a href="./index.html">О нас</a>
+        <a href="./index.html">Волонтёрская <br> деятельность</a>
+        <a href="./index.html">Продление <br> книг</a>
+        <a href="./index.html">Забронировать <br> книгу</a>
+        <a target="_blank" href="https://melnikovaleksei.github.io/library-book-catalog/">Каталог книг</a>
+        <a href="./index.html">Рассылка <br> новостей</a>
+        <a href="./index.html">Мероприятия</a>
+        <a href="./contacts.html">Контакты</a>
+      </div>
+    </nav>
+    <div class="contacts">
+      <h1>ГБУК г. Москвы <br> ЦБС ЮВАО <br> Библиотека 129</h1>
+      <a href="tel:84953452101">Телефон: <br> 8 (495) 345-21-01</a>
+      <a href="mailto:129a@cbsuvao.ru">Email: <br> 129a@cbsuvao.ru</a>
+      <p>Москва, Перерва 56/2 <br> <br> м. Братиславская</p>
+      <p class="otMetro" onclick="showHideMenu('otMetro')">Как дойти от метро</p>
+      <p style="display: none" id="otMetro">Первый вагон из центра, из дверей налево, прямо по коридору до конца и по лестнице направо</p>
+      <a target="_blank" href="https://goo.gl/maps/VpZTPt4LB1ykJNQ17">Открыть карты</a>
+    </div>
+    <script>
+      function showHideMenu(id) {
+        let x = document.getElementById(id);
+        if (x.style.display === 'none') {
+          x.style.display = 'flex';
+        } else {
+          x.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

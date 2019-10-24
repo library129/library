@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Библиотека 129</title>
+  </head>
+  <body>
+    <nav>
+      <button class="button" type="button" name="button" onclick="showHideMenu('menu');">МЕНЮ</button>
+      <div style="display: none;" class="menu-list" id="menu">
+        <a href="./index.html">О нас</a>
+        <a href="./index.html">Волонтёрская <br> деятельность</a>
+        <a href="./index.html">Продление <br> книг</a>
+        <a href="./index.html">Забронировать <br> книгу</a>
+        <a target="_blank" href="https://melnikovaleksei.github.io/library-book-catalog/">Каталог книг</a>
+        <a href="./index.html">Рассылка <br> новостей</a>
+        <a href="./index.html">Мероприятия</a>
+        <a href="./contacts.html">Контакты</a>
+      </div>
+    </nav>
+    <main>
+
+    </main>
+    <script>
+      function showHideMenu(id) {
+        let x = document.getElementById(id);
+        if (x.style.display === 'none') {
+          x.style.display = 'flex';
+        } else {
+          x.style.display = 'none';
+        }
+      }
+    </script>
+  </body>
+</html>

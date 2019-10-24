@@ -1,0 +1,52 @@
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+nav {
+  z-index: 1;
+  position: fixed;
+  background-color: blue;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  color: white;
+  margin: 1rem;
+}
+.menu-list a {
+  margin-left: 1.2rem;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.button {
+  display: flex;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  position: relative;
+  top: 4rem;
+}
+.contacts h1, a, p {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.contacts a {
+  color: blue;
+}
+.otMetro {
+  color: blue;
+}
