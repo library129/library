@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 nav {
   z-index: 1;
@@ -28,7 +28,7 @@ a {
   background-color: blue;
   color: white;
   border: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
 }
 
@@ -41,9 +41,15 @@ a {
   top: 4rem;
 }
 .contacts h1, a, p {
-  padding: 1rem;
+  padding: 0.8rem;
+}
+.contacts a, p {
+  font-size: 1.3rem;
+}
+.contacts h1 {
   font-size: 1.5rem;
 }
+
 .contacts a {
   color: blue;
 }
