@@ -12,7 +12,6 @@ nav {
   flex-direction: column;
   align-items:flex-start;
   color: white;
-  margin: 1rem;
 }
 .menu-list a {
   margin-left: 1.2rem;
@@ -35,7 +34,7 @@ a {
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   position: relative;
   top: 4rem;
