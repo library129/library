@@ -2,28 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width,initial-scale=1'/>
-    <meta content='true' name='HandheldFriendly'/>
-    <meta content='width' name='MobileOptimized'/>
-    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <title>Библиотека 129</title>
   </head>
   <body>
-    <nav>
-      <button class="button" type="button" name="button" onclick="showHideMenu('menu');">МЕНЮ</button>
-      <div style="display: none;" class="menu-list" id="menu">
-        <a href="./index.html">О нас</a>
-        <a href="./index.html">Волонтёрская <br> деятельность</a>
-        <a href="./index.html">Продление <br> книг</a>
-        <a href="./index.html">Забронировать <br> книгу</a>
-        <a target="_blank" href="https://melnikovaleksei.github.io/library-book-catalog/">Каталог книг</a>
-        <a href="./index.html">Рассылка <br> новостей</a>
-        <a href="./index.html">Мероприятия</a>
-        <a href="./contacts.html">Контакты</a>
-      </div>
-    </nav>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul class="menu__box">
+      <li><a class="menu__item" href="./index.html">Главная</a></li>
+      <li><a class="menu__item" href="#">О нас</a></li>
+      <li><a class="menu__item" href="#">Сотрудники</a></li>
+      <li><a class="menu__item" href="#">Волонтёрская деятельность</a></li>
+      <li><a class="menu__item" href="#">Продление книг</a></li>
+      <li><a class="menu__item" href="#">Забронировать книгу</a></li>
+      <li><a class="menu__item" href="#">Каталог книг</a></li>
+      <li><a class="menu__item" href="#">Рассылка новостей</a></li>
+      <li><a class="menu__item" href="#">Мероприятия</a></li>
+      <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
+    </ul>
+  </div>
+
     <main>
 
     </main>
