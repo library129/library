@@ -107,7 +107,7 @@ body {
 }
 .contacts h1, p, a {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .button-map {
 }
@@ -144,4 +144,7 @@ main img {
 .collapsible-headline svg {
   height: 1rem;
   margin: 0.5rem;
+}
+p {
+  text-align: left;
 }
