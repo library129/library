@@ -2,7 +2,7 @@
 	"dir" : "ltr",
 	"lang" : "Russian",
 	"name" : "Библиотека 129",
-	"scope" : "/library/index.html",
+	"scope" : "/library/,
 	"display" : "fullscreen",
 	"start_url" : "https://melnikovaleksei.github.io/library/index.html",
 	"short_name" : "Библиотека 129",
