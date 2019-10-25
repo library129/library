@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='manifest' href='./manifest.webmanifest'>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
     <title>Библиотека 129</title>
   </head>
   <body>
@@ -26,12 +28,34 @@
       <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
     </ul>
   </div>
+
     <main>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfWbSsKO-cLmDAGbsBs3s6f4koQZMfxWW1Suf-_V_V0rb1lhQ/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+      <iframe src="https://calendar.google.com/calendar/embed?src=0ond8ps7th8tkp5snjnvqn9494%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
     </main>
     <script>
       
+  // This is the service worker with the Cache-first network
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+
+
     </script>
-    <script src="./main.js"></script>    
+    <script src="./main.js"></script>
   </body>
 </html>
