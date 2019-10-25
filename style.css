@@ -104,7 +104,7 @@ body {
   flex-direction: column;
   margin-left: 4.5rem;
   position: relative;
-  top: 1rem;
+  top: 1.5rem;
 }
 .contacts h1, p, a {
   padding: 1rem;
@@ -118,5 +118,5 @@ body {
 }
 main {
   position: relative;
-  top: 4rem;
+  top: 1.5rem;
 }
