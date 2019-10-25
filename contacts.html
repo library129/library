@@ -19,9 +19,9 @@
       <li><a class="menu__item" href="#">Сотрудники</a></li>
       <li><a class="menu__item" href="./volunteer.html">Волонтёрская деятельность</a></li>
       <li><a class="menu__item" href="./prodlenie.html">Продление книг</a></li>
-      <li><a class="menu__item" href="./bronirovanie.html">Забронировать книгу</a></li>
+      <li><a class="menu__item" href="./reservation.html">Забронировать книгу</a></li>
       <li><a class="menu__item" target="_blank" href="https://melnikovaleksei.github.io/library-book-catalog/">Каталог книг</a></li>
-      <li><a class="menu__item" href="./rassulka.html">Рассылка новостей</a></li>
+      <li><a class="menu__item" href="./mailing.html">Рассылка новостей</a></li>
       <li><a class="menu__item" href="#">Мероприятия</a></li>
       <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
     </ul>
@@ -36,19 +36,14 @@
       <a target="_blank" href="https://www.facebook.com/libuvao129">Фейсбук</a>
       <a target="_blank" href="https://ok.ru/group/55535218196733">Одноклассники</a>    
       <p>Москва, Перерва 56/2 <br> <br> м. Братиславская</p>
+      <p class="button-map otMetro" onclick="showHideMenu('workTime')">Режим работы</p>
+      <p style="display: none" id="workTime">Вторник - Суббота <br> 10:00 - 22:00 <br><br> Воскресение <br> 12:00 - 20:00 <br><br> Понедельник: <br> выходной день <br><br> Последний вторник месяца: <br> санитарный день</p>
       <p class="button-map otMetro" onclick="showHideMenu('otMetro')">Как дойти от метро</p>
       <p style="display: none" id="otMetro">Первый вагон из центра, из дверей налево, прямо по коридору до конца и по лестнице направо</p>
       <a class="button-map metro" target="_blank" href="https://goo.gl/maps/VpZTPt4LB1ykJNQ17">Открыть карты</a>
     </div>
     <script>
-      function showHideMenu(id) {
-        let x = document.getElementById(id);
-        if (x.style.display === 'none') {
-          x.style.display = 'flex';
-        } else {
-          x.style.display = 'none';
-        }
-      }
+      
     </script>
     <script src="./main.js"></script>    
   </body>
