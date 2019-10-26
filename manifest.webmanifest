@@ -3,7 +3,7 @@
 	"lang" : "Russian",
 	"name" : "Библиотека 129",
 	"scope" : "/library/index.html",
-	"display" : "fullscreen",
+	"display" : "standalone",
 	"start_url" : "https://melnikovaleksei.github.io/library/index.html",
 	"short_name" : "Библиотека 129",
 	"theme_color" : "transparent",
