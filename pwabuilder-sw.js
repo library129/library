@@ -2,7 +2,7 @@
 
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
-  /* Add an array of files to precache for your app */
+  './index.html', './images', './style.css', './about.html', './contacts.html', './events.html', './excursions.html', './field.html', './mailing.html', './prodlenie.html', './reservation.html', './reset.css', './volunteer.html'
 ];
 
 self.addEventListener("install", function (event) {
@@ -26,7 +26,7 @@ self.addEventListener("activate", function (event) {
 });
 
 // If any fetch fails, it will look for the request in the cache and serve it from there first
-self.addEventListener("fetch", function (event) { 
+self.addEventListener("fetch", function (event) {
   if (event.request.method !== "GET") return;
 
   event.respondWith(
