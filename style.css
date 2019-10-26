@@ -181,6 +181,9 @@ p {
 }
 
 @media screen and (max-width: 400px) {
+  body {
+    font-size: 16px;
+  }
   .menu__item {
     font-size: 1rem;
   }
@@ -188,7 +191,7 @@ p {
     margin-top: 0;
   }
   p {
-    padding: 0 0 0 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
   }
   .icons img {
     height: 1.5rem;
@@ -202,5 +205,11 @@ p {
   .menu__box {
     padding-top: 3rem;
     padding-bottom: 0.25rem;
+  }
+  .menu__item {
+    padding: 0.25rem 0.7rem;
+  }
+  .collapsible-headline button {
+    padding: 0.5rem 1rem;
   }
 }
