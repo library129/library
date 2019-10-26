@@ -169,7 +169,7 @@ p {
 .icons {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 .icons img {
   color: black;
