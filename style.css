@@ -187,4 +187,20 @@ p {
   .icons {
     margin-top: 0;
   }
+  p {
+    padding: 0 0 0 1rem;
+  }
+  .icons img {
+    height: 1.5rem;
+  }
+  main img {
+    margin: 0.2rem 1rem 0.2rem 1rem;
+  }
+  main {
+    top: 2rem;
+  }
+  .menu__box {
+    padding-top: 3rem;
+    padding-bottom: 0.25rem;
+  }
 }
