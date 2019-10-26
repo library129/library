@@ -2,7 +2,7 @@
 
 const CACHE = "pwabuilder-precache";
 const precacheFiles = [
-  './index.html', './images', './style.css', './about.html', './contacts.html', './events.html', './excursions.html', './field.html', './mailing.html', './prodlenie.html', './reservation.html', './reset.css', './volunteer.html'
+  './index.html', './style.css', './about.html', './contacts.html', './events.html', './excursions.html', './field.html', './mailing.html', './prodlenie.html', './reservation.html', './reset.css', './volunteer.html'
 ];
 
 self.addEventListener("install", function (event) {
