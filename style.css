@@ -59,20 +59,17 @@ body {
 
 .menu__box {
   display: block;
-  position: fixed;
+  position: absolute;
   visibility: hidden;
   top: 0;
   left: -100%;
-
-  max-width: 60%;
-  max-height: 95%;
-
+  max-width: 70%;
   margin: 0;
   padding-top: 4rem;
   padding-bottom: 1rem;
   z-index: 9;
 
-  list-style: none;
+  
   border: 1px black solid;
 
   background-color: white;
