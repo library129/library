@@ -93,18 +93,10 @@ body {
 
   transition-duration: .25s;
 }
-.menu__item:hover {
-  background-color: blue;
-  color: white;
-}
+
 .menu__item:active {
   background-color: blue;
   color: white;
-}
-.menu__item:focus {
-  color: blue;
-  border: 4px dashed blue;
-  background-color: white;
 }
 .contacts {
   display: flex;
@@ -164,16 +156,9 @@ main h2 {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
 }
-.collapsible-headline button:hover {
-  border: 3px blue dashed;
-}
 .collapsible-headline button:focus {
   border: 3px blue dashed;
 }
-.collapsible-headline button:active {
-  border: 2.7px blue dashed;
-}
-
 .collapsible-headline svg {
   height: 1rem;
   margin: 0.5rem;
