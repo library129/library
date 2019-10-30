@@ -2,6 +2,36 @@ body {
   font-size: 18px;
   font-family: 'Arial', sans-serif;
 }
+h1 {
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+}
+h2 {
+  font-size: 1.2rem;
+  align-self: flex-start;
+  text-align: left;
+  margin: 1rem;
+}
+p {
+  font-size: 1rem;
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.contacts a, a {
+  font-size: 1rem;
+  align-self: flex-start;
+  text-align: left;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+}
 #menu__toggle {
   opacity: 0;
 }
@@ -82,7 +112,7 @@ body {
   display: block;
   padding: 0.5rem 1rem;
 
-  color: black;
+  color: white;
   opacity: 1;
 
   font-family: 'Roboto', sans-serif;
@@ -106,44 +136,28 @@ body {
   top: 0.7rem;
   margin-bottom: 5rem;
 }
-.contacts h1, p, a {
-  padding: 1rem;
-  font-size: 1rem;
-}
-
 .otMetro {
   text-decoration: underline;
   color: blue;
 }
 main {
   position: relative;
-  top: 2.5rem;
-  display: flex;
+    display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   margin-bottom: 5rem;
 }
 main img {
-  margin: 1.5rem;
+  margin-bottom: 1rem;
   width: 90%;
   opacity: 0.7;
 }
-main h1 {
-  text-align: right;
-  margin-right: 1rem;
-  top: -2rem;
-  position: relative;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
+
 .collapsible-headline {
   margin-bottom: 1rem;
 }
-main h2 {
-  text-align: left;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
+
 .collapsible-headline button {
   font-size: 1rem;
   display: flex;
@@ -163,9 +177,7 @@ main h2 {
   height: 1rem;
   margin: 0.5rem;
 }
-p {
-  text-align: left;
-}
+
 .icons {
   display: flex;
   justify-content: center;
@@ -177,10 +189,17 @@ p {
   opacity: 1;
   width: 100%;
   margin: 0;
+  background-color: white;
+}
+.icons a {
+  background-color: white;
 }
 .bordered {
   border: 4px dashed blue;
   margin: 0.5rem;
+  padding: 0.5rem;
+  align-self: center;
+  text-align: center;
 }
 @media screen and (min-width: 700px) {
   img {
@@ -201,34 +220,20 @@ p {
   .icons {
     margin-top: 0;
   }
-  p {
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-  }
   .icons img {
     height: 1.5rem;
   }
   main img {
     margin: 0.2rem 1rem 0.2rem 1rem;
   }
-  main {
-    top: 2rem;
-  }
   .menu__box {
     padding-top: 3rem;
     padding-bottom: 0.25rem;
   }
   .menu__item {
-    padding: 0.25rem 0.7rem;
+    padding: 0.5rem 0.7rem;
   }
   .collapsible-headline button {
     padding: 0.5rem 1rem;
   }
-  .contacts h1, p, a {
-    padding: 0.5rem;
-    margin-left: 0.4rem;
-  }
-  .contacts{
-    top: 1.5rem;
-  }
-
 }
