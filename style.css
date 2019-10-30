@@ -28,6 +28,8 @@ iframe {
 .contacts a, a {
   font-size: 1rem;
   margin: 0.5rem;
+  color: black;
+  align-self: center;
 }
 #menu__toggle {
   opacity: 0;
@@ -57,7 +59,7 @@ iframe {
   left: 1rem;
   width: 2rem;
   height: 2rem;
-  background-color: blue;
+  background-color: black;
   cursor: pointer;
   z-index: 10;
 }
@@ -125,11 +127,12 @@ iframe {
   text-align: center;
 }
 .showHide {
-  text-decoration: underline;
-  color: blue;
+  color: black;
+  padding: 0.5rem;
+  border: 3px black solid;
 }
 .menu__item:active {
-  background-color: blue;
+  background-color: black;
   color: white;
 }
 .contacts {
@@ -166,12 +169,12 @@ main img {
   margin-right: 1rem;
   background-color: white;
   color: black;
-  border: 3px blue solid;
+  border: 3px black solid;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
 }
 .collapsible-headline button:focus {
-  border: 3px blue dashed;
+  border: 3px black dashed;
 }
 .collapsible-headline svg {
   height: 1rem;
@@ -195,7 +198,7 @@ main img {
   background-color: white;
 }
 .bordered {
-  border: 4px dashed blue;
+  border: 4px dashed black;
   margin: 0.5rem;
   padding: 0.5rem;
   align-self: center;
