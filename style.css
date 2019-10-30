@@ -19,8 +19,11 @@ p {
   font-size: 1rem;
   align-self: flex-start;
   text-align: left;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 1.3rem;
+}
+iframe {
+  position: relative;
+  top: 2rem;
 }
 .contacts a, a {
   font-size: 1rem;
@@ -125,6 +128,7 @@ p {
 }
 .grafic {
   align-self: center;
+  text-align: center;
 }
 .menu__item:active {
   background-color: blue;
@@ -133,9 +137,6 @@ p {
 .contacts {
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
-  position: relative;
-  top: 0.7rem;
   margin-bottom: 5rem;
 }
 .otMetro {
