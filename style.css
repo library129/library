@@ -126,7 +126,7 @@ a {
   align-self: center;
   text-align: center;
 }
-.showHide, a {
+.showHide {
   color: black;
   padding: 0.5rem;
   border: 3px black solid;
