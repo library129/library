@@ -7,7 +7,7 @@ h1 {
   text-align: right;
   margin-bottom: 1rem;
   margin-right: 1rem;
-  align-self: flex-end;
+  align-self: center;
 }
 h2 {
   font-size: 1.2rem;
@@ -25,7 +25,7 @@ iframe {
   position: relative;
   top: 2rem;
 }
-.contacts a, a {
+a {
   font-size: 1rem;
   margin: 0.5rem;
   color: black;
@@ -126,7 +126,7 @@ iframe {
   align-self: center;
   text-align: center;
 }
-.showHide {
+.showHide, a {
   color: black;
   padding: 0.5rem;
   border: 3px black solid;
@@ -135,26 +135,17 @@ iframe {
   background-color: black;
   color: white;
 }
-.contacts {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
-.otMetro {
-  text-decoration: underline;
-  color: blue;
-}
 main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
   margin-bottom: 5rem;
 }
 main img {
   margin-bottom: 1rem;
   width: 90%;
   opacity: 0.7;
+  align-self: center;
 }
 .collapsible-headline {
   margin-bottom: 1rem;
