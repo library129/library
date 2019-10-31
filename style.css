@@ -140,6 +140,12 @@ main img {
   opacity: 0.7;
   align-self: center;
 }
+main video {
+  position: relative;
+  top: 3rem;
+  width: 80%;
+
+}
 .collapsible-headline {
   margin-bottom: 1rem;
 }
