@@ -81,16 +81,17 @@ a {
 }
 
 .menu__box {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: absolute;
   visibility: hidden;
   top: 0;
   left: -100%;
-  max-width: 70%;
   margin: 0;
   padding-top: 4rem;
   padding-bottom: 1rem;
   z-index: 9;
+  width: 99%;
 
 
   border: 1px black solid;
@@ -226,6 +227,7 @@ main video {
   .menu__box {
     padding-top: 3rem;
     padding-bottom: 0.25rem;
+    width: 96%;
   }
   .menu__item {
     padding: 0.5rem 0.7rem;
