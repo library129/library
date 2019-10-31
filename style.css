@@ -4,21 +4,17 @@ body {
 }
 h1 {
   font-size: 1.5rem;
-  text-align: right;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
   align-self: center;
+  margin: 1rem;
 }
 h2 {
   font-size: 1.2rem;
-  align-self: flex-start;
-  text-align: left;
   margin: 1rem;
+  text-align: justify;
 }
 p {
   font-size: 1rem;
-  align-self: flex-start;
-  text-align: left;
+  text-align: justify;
   margin: 1.3rem;
 }
 iframe {
@@ -29,7 +25,6 @@ a {
   font-size: 1rem;
   margin: 0.5rem;
   color: black;
-  align-self: baseline;
 }
 #menu__toggle {
   opacity: 0;
@@ -97,7 +92,7 @@ a {
   padding-bottom: 1rem;
   z-index: 9;
 
-  
+
   border: 1px black solid;
 
   background-color: white;
@@ -191,6 +186,13 @@ main img {
   padding: 0.5rem;
   align-self: center;
   text-align: center;
+}
+.contacts {
+  align-self: center;
+}
+.main-contacts {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 700px) {
   img {
