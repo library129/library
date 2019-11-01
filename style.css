@@ -28,6 +28,7 @@ a {
 }
 iframe {
   width: 95%;
+  position: initial;
 }
 #menu__toggle {
   opacity: 0;
