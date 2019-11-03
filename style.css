@@ -250,6 +250,7 @@ main video {
   }
   .menu__box {
     width: 20rem;
+    padding-bottom: 4rem;
   }
   .menu__item {
     padding: 0.3rem 0.7rem;
@@ -277,7 +278,7 @@ main video {
 
   }
   p {
-    max-width: 50%;
+    max-width: 33rem;
     align-self: center;
     font-size: 1.5rem;
   }
@@ -287,6 +288,7 @@ main video {
   }
   main video {
     width: 40%;
+    align-self: center;
   }
   iframe {
     width: 100%;
