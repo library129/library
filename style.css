@@ -282,6 +282,13 @@ main video {
     align-self: center;
     font-size: 1.5rem;
   }
+  a {
+    font-size: 1.5rem;
+    align-self: flex-start;
+  }
+  .contacts a {
+    margin-top: -4rem;
+  }
   .collapsible-headline button {
     margin: 0;
     font-size: 2rem;
@@ -297,7 +304,7 @@ main video {
     display: none;
   }
   .icons {
-    margin-top: 13rem;
+    margin-top: 5rem;
   }
   .icons img {
     height: 3rem;
