@@ -286,6 +286,10 @@ main video {
   header h2 {
     font-size: 1.4rem;
   }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
   main {
     text-align: center;
     margin-bottom: 1rem;
