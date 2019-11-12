@@ -74,7 +74,7 @@ iframe {
 
   background-color: white;
 
-  transition-duration: .25s;
+  transition-duration: .10s;
 }
 .menu__btn > span::before {
   content: '';
@@ -98,16 +98,15 @@ iframe {
   z-index: 9;
   width: 100%;
   background-color: white;
-  box-shadow: 2px 0px 6px rgba(0, 0, 0, .2);
+  opacity: 0.9;
 
-  transition-duration: .25s;
+  transition-duration: .10s;
 
 }
 
 .menu__item {
   display: block;
   padding: 0.5rem 1rem;
-
   color: black;
   opacity: 1;
   border: 2px solid black;
@@ -116,8 +115,6 @@ iframe {
   font-weight: 600;
 
   text-decoration: none;
-
-  transition-duration: .25s;
 }
 .grafic {
   align-self: center;
