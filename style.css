@@ -99,9 +99,7 @@ iframe {
   width: 100%;
   background-color: white;
   opacity: 0.9;
-
   transition-duration: .10s;
-
 }
 
 .menu__item {
@@ -113,7 +111,7 @@ iframe {
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
-
+  text-align: center;
   text-decoration: none;
 }
 .grafic {
@@ -250,6 +248,7 @@ main video {
   }
   .menu__item {
     font-size: 1rem;
+    text-align: center;
   }
   .icons {
     margin-top: 0;
@@ -314,6 +313,7 @@ main video {
   }
   .menu__item {
     padding: 0.3rem 0.7rem;
+    text-align: left;
   }
   .menu__item:hover {
     background-color: black;
