@@ -161,7 +161,7 @@ main video {
   position: relative;
   top: 3rem;
   width: 80%;
-
+  marjin: 1rem;
 }
 .collapsible-headline {
   margin-bottom: 1rem;
