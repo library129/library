@@ -32,11 +32,7 @@ a:focus {
   background-color: black;
   border: 3px black dashed;
 }
-.collapsible-headline:focus {
-  color: white;
-  background-color: black;
-  border: 3px black dashed;
-}
+
 iframe {
   width: 95%;
 }
@@ -173,6 +169,7 @@ main video {
 }
 .collapsible-headline {
   margin-bottom: 1rem;
+  display: block;
 }
 .collapsible-headline button {
   font-size: 1rem;
@@ -190,6 +187,8 @@ main video {
 .collapsible-headline button:focus {
   border: 3px black dashed;
   border-radius: 3px;
+  color: white;
+  background-color: black;
 }
 .collapsible-headline svg {
   height: 1rem;
