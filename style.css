@@ -122,7 +122,7 @@ iframe {
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 .grafic {
   align-self: center;
@@ -132,6 +132,7 @@ iframe {
   color: black;
   padding: 0.5rem;
   border: 3px black solid;
+  border-radius: 3px;
 }
 .menu__item:active {
   background-color: black;
@@ -182,9 +183,11 @@ main video {
   border: 3px black solid;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
+  border-radius: 3px;
 }
 .collapsible-headline button:focus {
   border: 3px black dashed;
+  border-radius: 3px;
 }
 .collapsible-headline svg {
   height: 1rem;
@@ -212,6 +215,7 @@ main video {
   padding: 0.5rem;
   align-self: center;
   text-align: center;
+  border-radius: 3px;
 }
 
 .main-contacts {
