@@ -25,6 +25,15 @@ a {
   font-size: 1rem;
   margin: 0.5rem;
   color: black;
+  text-decoration: none;
+}
+a:focus {
+  color: white;
+  background-color: black;
+  border: 3px black dashed;
+}
+nav:focus {
+  background-color: red;
 }
 iframe {
   width: 95%;
