@@ -295,13 +295,10 @@ main video {
     flex-direction: row;
     align-items: flex-start;
     flex-flow: wrap;
+    justify-content: space-around;
   }
   header h1, header h2 {
     margin-top: 2rem;
-  }
-  header h1 {
-    text-align: right;
-    margin-right: 1rem;
   }
   header h2 {
     font-size: 1.4rem;
@@ -351,8 +348,7 @@ main video {
     flex-direction: column;
   }
   h1 {
-    align-self: flex-end;
-    margin-right: 6rem;
+    align-self: center;
     font-size: 3rem;
     border: 0.3rem dashed black;
     padding: 1.5rem 4rem;
@@ -378,8 +374,9 @@ main video {
     font-size: 2rem;
   }
   main video {
-    width: 40%;
+    width: 20%;
     align-self: center;
+    margin-bottom: 0
   }
   iframe {
     width: 100%;
@@ -388,18 +385,19 @@ main video {
     display: none;
   }
   .icons {
-    margin-top: 13rem;
+    margin-top: 6rem;
   }
   .icons img {
     height: 3rem;
   }
   .banner {
-    margin-top: 10rem;
+    margin-top: 6rem;
     background-color: black;
     color: white;
-    padding: 2rem 3rem;
+    padding: 3rem 5rem;
     align-self: center;
     max-width: 45%;
+    font-size: 2rem;
     border-radius: 3px;
   }
 }
