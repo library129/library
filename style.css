@@ -32,8 +32,10 @@ a:focus {
   background-color: black;
   border: 3px black dashed;
 }
-nav:focus {
-  background-color: red;
+.collapsible-headline:focus {
+  color: white;
+  background-color: black;
+  border: 3px black dashed;
 }
 iframe {
   width: 95%;
@@ -222,6 +224,7 @@ main video {
   display: flex;
   flex-direction: column;
 }
+
 @media screen and (min-width: 700px) {
   img {
     display: none;
@@ -285,6 +288,15 @@ main video {
   }
 }
 @media screen and (min-width: 650px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-flow: wrap;
+  }
   header h1, header h2 {
     margin-top: 2rem;
   }
@@ -389,6 +401,7 @@ main video {
     padding: 2rem 3rem;
     align-self: center;
     max-width: 45%;
+    border-radius: 3px;
   }
 }
 @media (min-width: 650px) and (max-width: 1000px) {
@@ -403,5 +416,10 @@ main video {
   .menu__item {
     padding: 0.2rem 0.5rem;
     margin: 0.4rem;
+  }
+}
+@media screen and (max-width: 649px) {
+  .desktop-nav {
+    display: none;
   }
 }
