@@ -13,6 +13,7 @@ h1 {
 h1:active ~ .headerMedia {
   display: block;
   border: 0.3rem white dashed;
+  border-radius: 5px;
   background-color: blue;
   color: white;
 }
@@ -29,7 +30,7 @@ p {
 iframe {
   position: relative;
   top: 2rem;
-  width: 95%;
+  margin-bottom: 2rem;
 }
 a {
   font-size: 1rem;
@@ -392,7 +393,8 @@ main video {
     margin-bottom: 0
   }
   iframe {
-    width: 100%;
+    align-self: center;
+    max-width: 80%;
   }
   .volunteers-photo {
     display: none;
