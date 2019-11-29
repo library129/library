@@ -79,7 +79,7 @@ iframe {
   position: absolute;
 
   width: 100%;
-  height: 0.15rem;
+  height: 0.3rem;
 
   background-color: white;
 
@@ -116,7 +116,7 @@ iframe {
   padding: 0.5rem 1rem;
   color: black;
   opacity: 1;
-  border: 2px solid black;
+  border: 3px solid black;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
@@ -211,6 +211,13 @@ main video {
 }
 .icons a {
   background-color: white;
+}
+.icons a:focus {
+  border: 3px black solid;
+  border-radius: 3px;
+}
+.icons a:active {
+  border: 3px black dashed;
 }
 .bordered {
   border: 4px dashed black;
