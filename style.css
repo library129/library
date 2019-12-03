@@ -1,5 +1,5 @@
 html {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -37,7 +37,7 @@ h1 {
 h1:active ~ .headerMedia {
   display: block;
   border: 0.3rem white dashed;
-  border-radius: 5px;
+  border-radius: 0.15rem;
   background-color: blue;
   color: white;
 }
@@ -69,8 +69,18 @@ iframe {
 a {
   font-size: 1rem;
   margin: 0.5rem;
-  color: black;
+  outline: none;
   text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:focus {
+  color: white;
+  background-color: black;
+  border: 0.15rem dashed white;
 }
 
 a:hover {
@@ -78,10 +88,12 @@ a:hover {
   background-color: black;
 }
 
-a:focus {
-  color: white;
-  background-color: black;
+a:active {
+  color: rebeccapurple;
+  background-color: white;
 }
+
+
 
 /* menu style */
 
@@ -119,6 +131,12 @@ a:focus {
   background-color: black;
   cursor: pointer;
   z-index: 10;
+}
+.menu__btn:focus {
+  background-color: rebeccapurple;
+}
+.menu__btn:active {
+  background-color: rebeccapurple;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -166,26 +184,22 @@ a:focus {
   padding: 0.5rem 1rem;
   color: black;
   opacity: 1;
-  border: 3px solid black;
+  border: 0.15rem solid black;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 0.15rem;
 }
 
-.menu__item:active {
-  background-color: black;
-  color: white;
-}
 
 /* buttons */
 
 .showHide {
   color: black;
   padding: 0.5rem;
-  border: 3px black solid;
+  border: 0.15rem black solid;
   border-radius: 0.2rem;
 }
 
@@ -232,19 +246,19 @@ a:focus {
 }
 
 .icons a:focus {
-  border: 3px black solid;
-  border-radius: 3px;
+  border: 0.15rem black dashed;
+  border-radius: 0.15rem;
 }
 
 .icons a:active {
-  border: 3px black dashed;
+  border: 0.15rem rebeccapurple dashed;
 }
 
 .bordered {
   border: 0.3rem dashed black;
   padding: 0.5rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 0.15rem;
 }
 
 .main-contacts {
