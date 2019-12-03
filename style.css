@@ -203,6 +203,18 @@ a:active {
   border-radius: 0.2rem;
 }
 
+.showHide:focus {
+  border: 0.15rem white dashed;
+  border-radius: 0.2rem;
+}
+
+.showHide:hover {
+  color: white;
+  background-color: black
+  border: 0.15rem white dashed;
+  border-radius: 0.2rem;
+}
+
 .showHide:active {
   border: 0.15rem white dashed;
   border-radius: 0.2rem;
