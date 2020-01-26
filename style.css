@@ -60,6 +60,9 @@ p {
   text-align: justify;
   margin: 1.3rem;
 }
+.main-contacts > div p {
+  text-align: center;
+}
 
 iframe {
   position: relative;
@@ -114,6 +117,9 @@ a:active {
   visibility: visible;
   left: 0;
 }
+
+
+
 
 .menu__btn {
   display: flex;
@@ -206,6 +212,7 @@ a:active {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-radius: 0.2rem;
+  margin: 0.2rem;
 }
 
 .collapsible-headline button:focus {
@@ -371,6 +378,9 @@ a:active {
     opacity: 0.7;
     align-self: center;
   }
+  .main-contacts {
+    align-items: center;
+  }
 
   img {
     display: none;
@@ -426,6 +436,7 @@ a:active {
     margin-top: -4rem;
   }
 
+
   .collapsible-headline button {
     margin: 0;
     font-size: 2rem;
@@ -480,6 +491,9 @@ a:active {
   h1 {
     margin-right: 1rem;
     text-align: right;
+  }
+  .main-contacts > h2 {
+    display: contents;
   }
 
   h1:active ~ .headerMedia {
