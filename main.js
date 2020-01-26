@@ -49,7 +49,7 @@ function themeWithGetDate() {
 	if (month === 10 || month === 11 || month === 12 || month === 1 || month === 2 || month === 3) {
 		if (hour >= 17 || hour <= 8) {
 			updateTheme('black', 'white')
-			theme.textContent = 'Включена темная тема';
+			theme.textContent = 'Ночной режим включен';
 			theme.style.color = '#f52525';
 			theme.style.borderColor = '#f52525';
 		} else {
