@@ -74,28 +74,20 @@ a {
   margin: 0.5rem;
   outline: none;
   color: #f52525;
-}
-
-/*a:link {
-  color: black;
+  text-decoration: none;
 }
 
 a:focus {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   border: 0.15rem dashed white;
-}
-
-a:hover {
-  color: white;
-  background-color: black;
 }
 
 a:active {
   color: rebeccapurple;
   background-color: white;
 }
-*/
+
 
 
 /* menu style */
@@ -347,7 +339,9 @@ a:active {
     flex-flow: wrap;
     justify-content: center;
   }*/
-
+  .icons {
+    margin-top: 5rem;
+  }
   header h2 {
     font-size: 1.4rem;
   }
@@ -363,6 +357,7 @@ a:active {
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    align-items: center;
   }
 
   footer {
