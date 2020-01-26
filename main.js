@@ -37,6 +37,7 @@ const menu = document.querySelector('.menu__box');
 const html = document.querySelector('html');
 const theme = document.querySelector('.theme');
 let date = new Date();
+let month =  date.getMonth() + 1;
 let hour = date.getHours();
 
 function updateTheme(bgColor, textColor) {
@@ -45,6 +46,7 @@ function updateTheme(bgColor, textColor) {
 }
 
 function themeWithGetDate() {
+	if (month === 10 || month === 11 || month === 12 || month === 1 || month === 2 || month === 3) {
 		if (hour >= 17 || hour <= 8) {
 			updateTheme('black', 'white')
 			theme.textContent = 'Включена темная тема';
@@ -54,8 +56,28 @@ function themeWithGetDate() {
 			updateTheme('white', 'black');
 			theme.style.display = 'none';
 		}
-
+	} else if (month === 4 || month === 9){
+		if (hour >= 19 || hour <= 7) {
+			updateTheme('black', 'white')
+			theme.textContent = 'Включена темная тема';
+			theme.style.color = '#f52525';
+			theme.style.borderColor = '#f52525';
+		} else {
+			updateTheme('white', 'black');
+			theme.style.display = 'none';
+		}
+	} else {
+		if (hour >= 21 || hour <= 6) {
+			updateTheme('black', 'white')
+			theme.textContent = 'Включена темная тема';
+			theme.style.color = '#f52525';
+			theme.style.borderColor = '#f52525';
+		} else {
+			updateTheme('white', 'black');
+			theme.style.display = 'none';
+		}
 	}
+}
 
 
 themeWithGetDate()
