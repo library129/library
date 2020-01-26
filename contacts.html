@@ -21,7 +21,8 @@
     <meta property="og:description" content="Библиотека-медиацентр № 129 в Марьино. метро Братиславская, улица Перерва 56/2. В библиотеке книги, коворкинг, занятия для детей и взрослых, компьютерный зал, кинопоказы и выставки">
   </head>
   <body>
-    <nav class="desktop-nav">
+    <!--
+      <nav class="desktop-nav">
         <ul class="desktop-nav-list">
           <li><a class="menu__item" href="./index.html">Главная</a></li>
           <li><a class="menu__item" href="./about.html">О нас</a></li>
@@ -41,6 +42,7 @@
         </ul>
       </div>
     </nav>
+  -->
 
     <nav class="mobile-nav">
       <div class="hamburger-menu">
@@ -64,6 +66,7 @@
           <li><a class="menu__item" href="./partners.html">Наши партнёры</a></li>
           <li><a class="menu__item" rel="noopener" target="_blank" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151">Оплата услуг</a></li>
           <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
+          <li><a class="theme menu__item"></a></li>
         </ul>
       </div>
     </nav>
@@ -71,16 +74,69 @@
     <div class="main-contacts">
       <h1 class="contacts">Контакты</h1>
       <p class="bordered contacts" id="day"></p>
-      <a class="showHide contacts" href="tel:84953452101">Позвонить нам</a>
-      <p class="desktop-contacts">+7 (495) 345-21-00</p>
-      <a class="showHide contacts" href="mailto:129a@cbsuvao.ru">Написать нам</a>
-      <p class="desktop-contacts">129a@cbsuvao.ru</p>
-      <a class="showHide contacts" href="#workTime" onclick="showHideMenu('workTime')">Режим работы</a>
-      <p style="display: none" class="bordered contacts" id="workTime">Вторник - Суббота <br> 10:00 - 22:00 <br><br> Воскресение <br> 12:00 - 20:00 <br><br> Понедельник: <br> выходной день <br><br> Последний вторник месяца: <br> санитарный день</p>
-      <a class="showHide contacts" href="#otMetro" onclick="showHideMenu('otMetro')">Как дойти от метро</a>
-      <p style="display: none" class="bordered contacts"  id="otMetro">Первый вагон из центра, из дверей налево, далее прямо по коридору до конца и по лестнице направо</p>
-      <a class="button-map metro showHide contacts" rel="noopener" target="_blank" href="https://goo.gl/maps/VpZTPt4LB1ykJNQ17">Открыть карты</a>
-      <p class="desktop-contacts">Москва, Перерва 56/2</p>
+      <h2 class="collapsible-headline">
+        <button aria-expanded="false">
+          Телефон
+          <!--<svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+          </svg> -->
+        </button>
+      </h2>
+      <div hidden>
+        <p>+7 (495) 345-21-01</p>
+        <p class="collapsible-headline"><a class="showHide contacts" href="tel:84953452101">Позвонить нам</a></p class="collapsible-headline">
+      </div>
+      <h2 class="collapsible-headline">
+        <button aria-expanded="false">
+          Email
+          <!--<svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+          </svg> -->
+        </button>
+      </h2>
+      <div hidden>
+        <p>129a@cbsuvao.ru</p>
+        <p><a class="showHide contacts" href="mailto:129a@cbsuvao.ru">Написать нам</a></p>
+      </div>
+      <h2 class="collapsible-headline">
+        <button aria-expanded="false">
+          Адрес
+          <!--<svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+          </svg> -->
+        </button>
+      </h2>
+      <div hidden>
+        <p>Москва, Перерва 56/2</p>
+        <p><a class="button-map metro showHide contacts" rel="noopener" target="_blank" href="https://goo.gl/maps/VpZTPt4LB1ykJNQ17">Открыть карты</a></p>
+      </div>
+      <h2 class="collapsible-headline" onclick="showHideMenu('workTime')">
+        <button aria-expanded="false">
+          Режим работы
+          <!--<svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+          </svg> -->
+        </button>
+      </h2>
+      <div hidden>
+        <p style="display: none" class="bordered contacts" id="workTime">Вторник - Суббота <br> 10:00 - 22:00 <br><br> Воскресение <br> 12:00 - 20:00 <br><br> Понедельник: <br> выходной день <br><br> Последний вторник месяца: <br> санитарный день</p>
+      </div>
+      <h2 class="collapsible-headline" onclick="showHideMenu('otMetro')">
+        <button aria-expanded="false">
+          Как дойти от метро
+          <!--<svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+          </svg> -->
+        </button>
+      </h2>
+      <div hidden>
+        <p style="display: none" class="bordered contacts"  id="otMetro">Выход из метро Братиславская № 3. Первый вагон из центра, из дверей налево, далее прямо по коридору до конца и по лестнице направо</p>
+      </div>
     </div>
     </main>
     <footer>
