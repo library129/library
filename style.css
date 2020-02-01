@@ -74,6 +74,15 @@ iframe {
 }
 
 /* link style */
+li {
+  list-style: none;
+}
+.blankLinks {
+  background-color: rgb(110, 110, 255);
+}
+.other {
+  background-color: #fffac2;
+}
 
 a {
   font-size: 1rem;
@@ -179,7 +188,7 @@ a:active {
   z-index: 9;
   width: 100%;
   background-color: black;
-  opacity: 0.9;
+  opacity: 0.98;
   transition-duration: .10s;
 }
 
@@ -216,6 +225,7 @@ a:active {
   font-size: 1.2rem;
   border-radius: 0.2rem;
   margin: 0.5rem;
+  display: block;
 }
 
 .collapsible-headline button:focus {
