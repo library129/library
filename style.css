@@ -74,6 +74,15 @@ iframe {
 }
 
 /* link style */
+li {
+  list-style: none;
+}
+.blankLinks {
+  background-color: rgb(110, 110, 255);
+}
+.other {
+  background-color: #fffac2;
+}
 
 a {
   font-size: 1rem;
