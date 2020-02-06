@@ -9,6 +9,8 @@ button {
 /* main part */
 
 main {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -25,7 +27,8 @@ main img {
 main video {
   position: relative;
   top: 3rem;
-  width: 80%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   margin-bottom: 3rem;
 }
 
@@ -71,6 +74,15 @@ iframe {
 }
 
 /* link style */
+li {
+  list-style: none;
+}
+.blankLinks {
+  background-color: rgb(110, 110, 255);
+}
+.other {
+  background-color: #fffac2;
+}
 
 a {
   font-size: 1rem;
@@ -176,7 +188,7 @@ a:active {
   z-index: 9;
   width: 100%;
   background-color: black;
-  opacity: 0.9;
+  opacity: 0.98;
   transition-duration: .10s;
 }
 
@@ -211,7 +223,8 @@ a:active {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-radius: 0.2rem;
-  margin: 0.2rem;
+  margin: 0.5rem;
+  display: block;
 }
 
 .collapsible-headline button:focus {
@@ -325,6 +338,11 @@ a:active {
     padding: 0.5rem 1rem;
   }
 
+  main video {
+    top: 0;
+    margin-bottom: 0;
+  }
+
 }
 
 @media screen and (min-width: 650px) {
@@ -351,7 +369,9 @@ a:active {
   header h2 {
     font-size: 1.4rem;
   }
-
+#blankLinks:hover {
+  background-color: rgb(63, 63, 255);
+}
   header {
     display: flex;
     flex-direction: column;
@@ -437,7 +457,7 @@ a:active {
 
 
   .collapsible-headline button {
-    margin: 0;
+    margin: 0.5rem;
     font-size: 2rem;
   }
 
@@ -487,11 +507,12 @@ a:active {
     display: none;
   }
 
+  
   h1 {
     margin-right: 1rem;
     text-align: right;
   }
-  .main-contacts > h2 {
+  .collapsible-headline {
     display: contents;
   }
 
