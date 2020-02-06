@@ -11,6 +11,8 @@
 		}
 	})
 })()
+const other = document.querySelector('#other');
+const ulOther = document.querySelector('.ulOther');
 function showHideMenu(id) {
 				let x = document.getElementById(id);
 				if (x.style.display === 'none') {
@@ -19,6 +21,14 @@ function showHideMenu(id) {
 					x.style.display = 'none';
 				}
 			}
+other.addEventListener('click', function (id) {
+	if (ulOther.style.display === 'block') {
+		ulOther.style.display = 'none';
+	} else {
+		ulOther.style.display = 'block';
+	}
+
+})
 function day(id) {
 	let d = new Date();
 	let weekday = new Array(7);
