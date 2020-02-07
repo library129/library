@@ -103,7 +103,9 @@ a:active {
   background-color: white;
 }
 
-
+.blankLinks:hover {
+  content: attr(data-title);
+}
 
 /* menu style */
 
