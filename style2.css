@@ -1,8 +1,45 @@
-#menu__toggle {
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+span, a {
+  font-size: 1rem;
+  line-height: normal;
+  font-weight: 200;
+  color: black;
+  text-decoration: none;
+}
+
+  #menu__toggle {
     opacity: 0;
   }
+
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
+  }
+  #menu__toggle:focus ~ .menu__btn {
+    border: 3px solid #1f48d4;
   }
   #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
@@ -28,7 +65,6 @@
     height: 26px;
     cursor: pointer;
     z-index: 1;
-    background-color: #f0c41b;
     padding: 0.5rem;
   }
   .menu__btn > span,
@@ -37,9 +73,9 @@
     display: block;
     position: absolute;
     width: 60%;
-    height: 2px;
-    background-color: #2148d4;
-    transition-duration: .25s;
+    height: 4px;
+    background-color: #1f48d4;
+    transition-duration: .15s;
   }
   .menu__btn > span::before {
     content: '';
@@ -59,7 +95,7 @@
     left: -100%;
 
     width: 200px;
-    height: 70%;
+    height: 100%;
 
     margin: 0;
     padding: 80px 0;
@@ -69,13 +105,13 @@
     background-color: white;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
-    transition-duration: .25s;
+    transition-duration: .15s;
   }
 
   .menu__item {
     display: block;
     padding: 12px 24px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 3px solid #1f48d4;
     color: #333;
 
     font-family: 'Roboto', sans-serif;
@@ -90,4 +126,74 @@
     background-color: #1f48d4;
     color: white;
   }
+  .menu__item:focus {
+    background-color: #1f48d4;
+    color: white;
+  }
   
+  main h2 {
+    margin: 2rem;
+  }
+  
+  main > div + h2 {
+    border-top: 2px solid;
+  }
+  
+  h2 button {
+    all: inherit;
+    border-top: 0.15rem solid #1f48d4;
+    border-bottom: 0.15rem solid #1f48d4;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 0.5rem 0;
+    font-weight: 600;
+  }
+  
+  h2 button:focus svg {
+    outline: 2px solid;
+  }
+  
+  button svg {
+    height: 1em;
+    margin-left: 0.5em;
+  }
+  
+  [aria-expanded="true"] .vert {
+    display: none;
+  }
+  
+  [aria-expanded] rect {
+    fill: currentColor;
+  }
+  
+  @media screen and (min-width: 700px) {
+    main {
+      margin-left: 15rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-right: 2rem;
+    }
+    
+    h2 button {
+      padding: 1rem 0;
+    }
+    p {
+      margin: 1rem;
+      padding: 0.5rem;
+      font-size: 1.25rem;
+      width: 60%;
+      border-right: 0.15rem solid #1f48d4;
+      border-left: 0.15rem solid #1f48d4;
+    }
+    .menu__box {
+      width: 300px;
+     }
+    .menu__item {
+      font-size: 1.5rem;
+    }
+    main h2 {
+      font-size: 1.5rem;
+    }
+  }
