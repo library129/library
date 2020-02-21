@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 h1 {
@@ -21,12 +21,21 @@ h2 {
 p {
   margin: 0.5rem;
   font-size: 1rem;
+  line-height: normal;
 }
 .para {
-  background-color: #eff2ff;
+  background-color: #f7f9ff;
   padding: 0.5rem;
 }
-
+.para a {
+  width: fit-content;
+  font-weight: normal;
+  border: 3px solid #1f48d4;
+  margin-top: 1rem;
+}
+.bold {
+  font-weight: bold;
+}
 span, a {
   font-size: 1rem;
   line-height: normal;
@@ -114,12 +123,12 @@ span, a {
 
   .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding: 0.7rem 1.4rem;
     border-bottom: 3px solid #1f48d4;
     color: #333;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 600;
 
     text-decoration: none;
@@ -166,26 +175,32 @@ span, a {
     fill: currentColor;
   }
   
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 650px) {
     main {
       margin-left: 15rem;
     }
     h1 {
       font-size: 2rem;
-      margin-right: 2rem;
+      margin-right: 6rem;
     }
     
     h2 button {
       padding: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
     p {
       margin: 1rem;
       padding: 1rem;
-      padding: 0.5rem;
       font-size: 1.25rem;
       width: 60%;
-      border-right: 0.15rem solid #1f48d4;
       border-left: 0.15rem solid #1f48d4;
+    }
+    .para a {
+      margin-left: 1rem;
+    }
+    .bold {
+      font-size: 1.25rem;
     }
     .menu__box {
       width: 300px;
