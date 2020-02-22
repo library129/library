@@ -24,7 +24,7 @@ p {
   line-height: normal;
 }
 .para {
-  background-color: #f7f9ff;
+  background-color: aliceblue;
   padding: 0.5rem;
 }
 .para a {
@@ -106,7 +106,7 @@ span, a {
     visibility: hidden;
     top: 0;
     left: -100%;
-
+    background-color: aliceblue;
     width: 200px;
     height: 100%;
 
@@ -114,8 +114,6 @@ span, a {
     padding: 80px 0;
 
     list-style: none;
-
-    background-color: white;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
     transition-duration: .15s;
@@ -123,7 +121,7 @@ span, a {
 
   .menu__item {
     display: block;
-    padding: 0.7rem 1.4rem;
+    padding: 0.45rem 1rem;
     border-bottom: 3px solid #1f48d4;
     color: #333;
 
