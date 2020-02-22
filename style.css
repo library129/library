@@ -30,7 +30,6 @@ p {
 .para a {
   width: fit-content;
   font-weight: normal;
-  border: 3px solid #1f48d4;
   margin-top: 1rem;
 }
 .bold {
