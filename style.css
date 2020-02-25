@@ -107,8 +107,8 @@ span, a {
     left: -100%;
     background-color: aliceblue;
     width: 200px;
-    height: 100%;
-    
+    max-height: 100%;
+    opacity: 1;
     margin: 0;
     padding: 80px 0;
 
