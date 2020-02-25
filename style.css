@@ -185,6 +185,7 @@ span, a {
       padding: 1rem 0;
       font-size: 1.5rem;
       font-weight: 600;
+      cursor: pointer;
     }
     p {
       margin: 1rem;
