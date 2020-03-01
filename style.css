@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: right;
   margin-right: 1rem;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -46,7 +46,7 @@ span, a {
   #menu__toggle {
     opacity: 0;
   }
-
+  
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
   }
@@ -70,13 +70,13 @@ span, a {
     align-items: center;
     flex-direction: row;
     text-align:center;
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 11;
     padding: 0.5rem;
   }
   .menu__btn > span,
@@ -94,6 +94,9 @@ span, a {
     top: -8px;
     width: 100%
   }
+  .menu__btn > body::before {
+    overflow: hidden;
+  }
   .menu__btn > span::after {
     content: '';
     top: 8px;
@@ -102,16 +105,16 @@ span, a {
   .menu__box {
     display: block;
     position: absolute;
-    visibility: hidden;
+    visibility: visible;
     top: 0;
     left: -100%;
-    background-color: aliceblue;
-    width: 200px;
-    max-height: 100%;
+    background-color: #cfe9ff;
+    width: 70%;
+    height: 100%;
     opacity: 1;
     margin: 0;
     padding: 80px 0;
-
+    z-index: 10;
     list-style: none;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
@@ -172,6 +175,33 @@ span, a {
     fill: currentColor;
   }
   
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+  }
+  
+  .icons img {
+    height: 2rem;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+  }
+  
+  .icons a {
+    background-color: white;
+  }
+  
+  .icons a:focus {
+    border: 3px #1f48d4 solid;
+    border-radius: 3px;
+  }
+  @media screen and (max-width: 350px) {
+    main h2 {
+      margin: 0.7rem;
+    }
+  }
   @media screen and (min-width: 650px) {
     main {
       margin-left: 15rem;
@@ -194,6 +224,12 @@ span, a {
       width: 60%;
       border-left: 0.15rem solid #1f48d4;
     }
+    .icons {
+      justify-content: center;
+    }
+    .icons img {
+      height: 3rem;
+    }
     .para a {
       margin-left: 1rem;
     }
@@ -210,3 +246,4 @@ span, a {
       font-size: 1.5rem;
     }
   }
+  
