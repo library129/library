@@ -11,13 +11,15 @@ h1 {
   font-weight: 600;
   text-align: right;
   margin-right: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 h2 {
   font-size: 1.5rem;
 }
-
+main {
+  margin-top: 1.5rem;
+}
 p {
   margin: 0.5rem;
   font-size: 1rem;
@@ -197,11 +199,17 @@ span, a {
     border: 3px #1f48d4 solid;
     border-radius: 3px;
   }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 550px) {
     main h2 {
       margin: 0.7rem;
     }
   }
+  @media screen and (max-width: 285px) {
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+
   @media screen and (min-width: 650px) {
     main {
       margin-left: 15rem;
