@@ -186,14 +186,9 @@ span, a {
   
   .icons img {
     height: 2rem;
-    width: 100%;
     margin: 0;
-    background-color: white;
   }
-  
-  .icons a {
-    background-color: white;
-  }
+
   
   .icons a:focus {
     border: 3px #1f48d4 solid;
@@ -212,7 +207,7 @@ span, a {
 
   @media screen and (min-width: 650px) {
     main {
-      margin-left: 15rem;
+      margin-left: 13rem;
     }
     h1 {
       font-size: 2rem;
@@ -231,9 +226,6 @@ span, a {
       font-size: 1.25rem;
       width: 60%;
       border-left: 0.15rem solid #1f48d4;
-    }
-    .icons {
-      justify-content: center;
     }
     .icons img {
       height: 3rem;
