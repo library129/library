@@ -26,13 +26,14 @@ p {
   line-height: normal;
 }
 .para {
-  background-color: aliceblue;
+  background-color: #8ea9c1;
   padding: 0.5rem;
 }
 .para a {
   width: fit-content;
   font-weight: normal;
   margin-top: 1rem;
+  text-decoration: underline;
 }
 .bold {
   font-weight: bold;
@@ -126,7 +127,6 @@ span, a {
   .menu__item {
     display: block;
     padding: 1rem 1rem;
-    border-bottom: 3px solid #1f48d4;
     color: #333;
 
     font-family: 'Roboto', sans-serif;

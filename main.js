@@ -40,7 +40,7 @@ let hour = date.getHours();
 function changeTheme(hour) {
 	if (hour > 18 || hour < 7) {
 		body.style.backgroundColor = 'goldenrod';
-		menu.style.backgroundColor = '#e6b740'		
+		menu.style.backgroundColor = '#e6b740';
 	}
 }
 changeTheme(hour)
