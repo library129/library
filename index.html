@@ -27,7 +27,7 @@
     </script>
 </head>
 <body>
-    <nav class="nav">
+    <!--<nav class="nav">
       <div class="hamburger-menu">
       <input id="menu__toggle" type="checkbox"/>
       <label class="menu__btn" for="menu__toggle">
@@ -40,12 +40,37 @@
         <li><a class="menu__item" href="tel:84953452100">Позвонить</a></li>
       </ul>
       </div>
-    </nav>
+    </nav><-->
+    <div>
     <header>
-      <div>
+      <nav class="desktop-nav">
         <h1>Библиотека 129</h1>
-      </div>
+        <a class="menu__item" href="https://melnikovaleksei.github.io/library-book-catalog/" target="_blank" rel="noopener" >Каталог</a>
+        <a class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener" >Оплата услуг</a>
+        <a class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
+        <a class="menu__item" href="tel:84953452100">Позвонить</a>
+      </nav>
+
+
+
+      <nav class="mobile-nav">
+        <div class="menu__title">
+          <h1>Библиотека 129</h1>
+          <button class="menu__btn">Меню</button>
+        </div>
+          <div class="menu__list">
+            <a class="menu__item" href="https://melnikovaleksei.github.io/library-book-catalog/" target="_blank" rel="noopener" >Каталог</a>
+            <a class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener" >Оплата</a>
+            <a class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
+            <a class="menu__item" href="tel:84953452100">Позвонить</a>
+          </div>
+      </nav>
     </header>
+
+
+
+
+
     <main>
 		<h2 class="collapsible-headline">
 			<button aria-expanded="false">
@@ -137,6 +162,7 @@
         <a target="_blank" rel="noopener" href="https://github.com/MelnikovAleksei"><img alt="пиктограмма гитхаб" src="./github.svg"></a>
       </div>
     </footer>
+  </div>
     <script src="./main.js"></script>
 </body>
 </html>

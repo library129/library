@@ -12,35 +12,34 @@
 		})
 	})()
 let body = document.querySelector('body');
-let menu = document.querySelector('.menu__box');
-let menuItem = document.querySelectorAll('.menu__box');
-let menuToggle = document.querySelector('#menu__toggle');
-let main = document.querySelector('main');
-let footer = document.querySelector('footer');
+let menuBtn = document.querySelector('.menu__btn');
+let menuItem = document.querySelector('.menu__list');
+/*let h2 = document.querySelector('.collapsible-headline')
+let main = document.querySelectorAll('main')*/
+
 let checked = false;
-menuToggle.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
 	if (!checked) {
-		document.body.style.overflow = 'hidden';
-		main.style.pointerEvents = 'none';
-		footer.style.pointerEvents = 'none';
-		main.style.opacity = '0.4';
-		footer.style.opacity = '0.4';
+		menuItem.style.display = 'flex';
+		menuBtn.style.backgroundColor = 'white';
+		menuBtn.style.color = 'black';
 		checked = true;
 	} else {
-		document.body.style.overflow = 'scroll';
-		main.style.pointerEvents = 'auto';
-		footer.style.pointerEvents = 'auto';
-		main.style.opacity = '1';
-		footer.style.opacity = '1';
+		menuItem.style.display = 'none';
+		menuBtn.style.backgroundColor = 'rgb(230, 183, 64)';
+		menuBtn.style.color = 'white';
 		checked = false;
 	}  
 })
-let date = new Date();
+
+/*let date = new Date();
 let hour = date.getHours();
 function changeTheme(hour) {
 	if (hour > 18 || hour < 7) {
-		body.style.backgroundColor = 'goldenrod';
-		menu.style.backgroundColor = '#e6b740';
+		body.style.backgroundColor = 'black';
+		body.style.color = 'white';
+		h2.style.color = 'white';
+		para.style.backgroundColor = 'black';
 	}
 }
-changeTheme(hour)
+changeTheme(hour)*/

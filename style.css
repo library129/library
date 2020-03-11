@@ -5,20 +5,62 @@ html {
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
-
-h1 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: right;
-  margin-right: 1rem;
-  margin-top: 0.5rem;
+.desktop-nav {
+  display: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: #1f48d4;
+  height: 3.5rem;
+}
+.menu__title h1 {
+  color: white;
+  padding: 0.5rem;
+}
+.menu__btn {
+  background-color: rgb(230, 183, 64);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.menu__item {
+  color: white;
+  margin: auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.menu__list {
+  display: none;
+  background-color: #1f48d4;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 3.5rem;
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}
 h2 {
   font-size: 1.5rem;
 }
 main {
-  margin-top: 1.5rem;
+  margin-top: 4.5rem;
 }
 p {
   margin: 0.5rem;
@@ -45,7 +87,7 @@ span, a {
   color: black;
   text-decoration: none;
 }
-
+/*
   #menu__toggle {
     opacity: 0;
   }
@@ -63,10 +105,6 @@ span, a {
   #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
   }
   .menu__btn {
     display: flex;
@@ -106,11 +144,10 @@ span, a {
     width: 100%
   }
   .menu__box {
-    display: block;
+    display: none;
     position: absolute;
     visibility: visible;
     top: 0;
-    left: -100%;
     background-color: #cfe9ff;
     width: 70%;
     height: 100%;
@@ -144,15 +181,14 @@ span, a {
   .menu__item:focus {
     background-color: #1f48d4;
     color: white;
-  }
+  }*/
   
   main h2 {
-    margin: 2rem;
+    margin: 1rem;
   }
     
   h2 button {
     all: inherit;
-    border-top: 0.15rem solid #1f48d4;
     border-bottom: 0.15rem solid #1f48d4;
     display: flex;
     justify-content: space-between;
@@ -194,25 +230,48 @@ span, a {
     border: 3px #1f48d4 solid;
     border-radius: 3px;
   }
-  @media screen and (max-width: 550px) {
-    main h2 {
-      margin: 0.7rem;
-    }
+
   }
   @media screen and (max-width: 285px) {
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
     }
   }
 
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 900px) {
     main {
-      margin-left: 13rem;
+      margin-top: 7rem;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+    .mobile-nav{
+      display: none;
+    }
+    .desktop-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      background-color: #1f48d4;
+      height: 4rem;
+    }
+    .desktop-nav h1,
+    .desktop-nav a {
+      color: white;
+      padding: 1rem;
     }
     h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    
+    }
+    /*h1 {
       font-size: 2rem;
       margin-right: 6rem;
-    }
+    }*/
     
     h2 button {
       padding: 1rem 0;
