@@ -231,7 +231,6 @@ span, a {
     border-radius: 3px;
   }
 
-  }
   @media screen and (max-width: 285px) {
     h1 {
       font-size: 1.2rem;
@@ -306,9 +305,6 @@ span, a {
     }
     main h2 {
       font-size: 1.5rem;
-    }
-    .table-catalog {
-      margin-top: 6rem;
     }
   }
   
