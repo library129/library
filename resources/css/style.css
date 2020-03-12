@@ -76,6 +76,7 @@ p {
   font-weight: normal;
   margin-top: 1rem;
   text-decoration: underline;
+  color: #1f48d4;
 }
 .bold {
   font-weight: bold;
@@ -182,7 +183,6 @@ span, a {
     background-color: #1f48d4;
     color: white;
   }*/
-  
   main h2 {
     margin: 1rem;
   }
@@ -268,6 +268,9 @@ span, a {
       font-weight: 600;
     
     }
+    a:focus {
+      border: 0.1rem solid white;
+    }
     /*h1 {
       font-size: 2rem;
       margin-right: 6rem;
@@ -303,6 +306,9 @@ span, a {
     }
     main h2 {
       font-size: 1.5rem;
+    }
+    .table-catalog {
+      margin-top: 6rem;
     }
   }
   
