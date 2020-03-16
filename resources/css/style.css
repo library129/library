@@ -21,6 +21,7 @@ header {
   align-items: center;
   background-color: #1f48d4;
   height: 3.5rem;
+  
 }
 .menu__title h1 {
   color: white;
@@ -49,6 +50,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   height: 3.5rem;
+  opacity: 0.95;
 }
 
 h1 {
