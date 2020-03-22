@@ -31,7 +31,26 @@ menuBtn.addEventListener('click', () => {
 		checked = false;
 	}  
 })
+let searchInput = document.querySelector('input');
+let searchButton = document.querySelector('button');
 
+searchButton.addEventListener('click', () => {
+    fetch("./resources/catalog/catalog.json")
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            let result = (data['books'].join().toLowerCase().includes(searchInput.value.toLowerCase()))
+            if (result) {
+                alert('Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам');
+            } else {
+                alert('Книга не найдена');
+            }
+        })
+        .catch((e) => {
+            console.log(e)
+        })
+})
 /*let date = new Date();
 let hour = date.getHours();
 function changeTheme(hour) {
