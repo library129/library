@@ -32,7 +32,7 @@ menuBtn.addEventListener('click', () => {
 	}  
 })
 let searchInput = document.querySelector('input');
-let searchButton = document.querySelector('button');
+let searchButton = document.querySelector('.search__btn');
 
 searchButton.addEventListener('click', () => {
     fetch("./resources/catalog/catalog.json")
