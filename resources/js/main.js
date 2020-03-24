@@ -55,7 +55,8 @@ function searchBooks() {
         .then((data) => {
             let result = (data['books'].join().toLowerCase().includes(searchInput.value.toLowerCase().trim()))
             if (result) {
-                alert('Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам');
+				alert('Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам');
+				searchInput.focus();
             } else {
                 alert('Книга не найдена');
             }
