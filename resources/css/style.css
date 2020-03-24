@@ -1,12 +1,8 @@
 html {
   font-size: 18px;
 }
-
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
-}
-.desktop-nav {
-  display: none;
 }
 header {
   position: fixed;
@@ -21,7 +17,6 @@ header {
   align-items: center;
   background-color: #1f48d4;
   height: 3.5rem;
-  
 }
 .menu__title h1 {
   color: white;
@@ -115,229 +110,118 @@ span, a {
   color: black;
   text-decoration: none;
 }
-/*
-  #menu__toggle {
-    opacity: 0;
+main h2 {
+  margin: 1rem;
+}  
+h2 button {
+  all: inherit;
+  border-bottom: 0.15rem solid #1f48d4;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 0.5rem 0;
+}
+h2 button:focus svg {
+  outline: 2px solid;
+}
+button svg {
+  height: 1em;
+  margin-left: 0.5em;
+}
+[aria-expanded="true"] .vert {
+  display: none;
+} 
+[aria-expanded] rect {
+  fill: currentColor;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.icons img {
+  height: 2rem;
+  margin: 0;
+}
+.icons a:focus {
+  border: 3px #1f48d4 solid;
+  border-radius: 3px;
+}
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #1f48d4;
+  height: 4rem;
+}
+@media screen and (max-width: 285px) {
+  h1 {
+    font-size: 1.2rem;
   }
-  
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
+}
+@media screen and (min-width: 900px) {
+  main {
+    margin-top: 7rem;
   }
-  #menu__toggle:focus ~ .menu__btn {
-    border: 3px solid #1f48d4;
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
+  header {
+    position: fixed;
+    width: 100%;
     top: 0;
-    transform: rotate(0);
   }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
+  .desktop-nav h1,
+  .desktop-nav a {
+    color: white;
+    padding: 1rem;
   }
-  .menu__btn {
-    display: flex;
-    align-items: center;
+  .searchForm {
     flex-direction: row;
-    text-align:center;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 11;
-    padding: 0.5rem;
+    justify-content: space-around;
   }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 60%;
-    height: 4px;
-    background-color: #1f48d4;
-    transition-duration: .15s;
+  .searchInput {
+    width: 50%;
   }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-    width: 100%
+  .search__btn {
+    width: 20%;
   }
-  .menu__btn > body::before {
-    overflow: hidden;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-    width: 100%
-  }
-  .menu__box {
-    display: none;
-    position: absolute;
-    visibility: visible;
-    top: 0;
-    background-color: #cfe9ff;
-    width: 70%;
-    height: 100%;
-    opacity: 1;
-    margin: 0;
-    padding: 80px 0;
-    z-index: 10;
-    list-style: none;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-
-    transition-duration: .15s;
-  }
-
-  .menu__item {
-    display: block;
-    padding: 1rem 1rem;
-    color: #333;
-
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+  h1 {
+    font-size: 1.8rem;
     font-weight: 600;
-
-    text-decoration: none;
-
-    transition-duration: .25s;
   }
-  .menu__item:hover {
-    background-color: #1f48d4;
-    color: white;
-  }
-  .menu__item:focus {
-    background-color: #1f48d4;
-    color: white;
-  }*/
-  main h2 {
-    margin: 1rem;
+  a:focus {
+    border: 0.1rem solid white;
   }
     
   h2 button {
-    all: inherit;
-    border-bottom: 0.15rem solid #1f48d4;
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
   }
-  
-  h2 button:focus svg {
-    outline: 2px solid;
+  p {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 60%;
+    border-left: 0.15rem solid #1f48d4;
   }
-  
-  button svg {
-    height: 1em;
-    margin-left: 0.5em;
-  }
-  
-  [aria-expanded="true"] .vert {
-    display: none;
-  }
-  
-  [aria-expanded] rect {
-    fill: currentColor;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-    
-  }
-  
   .icons img {
-    height: 2rem;
-    margin: 0;
+    height: 3rem;
   }
-
-  
-  .icons a:focus {
-    border: 3px #1f48d4 solid;
-    border-radius: 3px;
+  .para a {
+    margin-left: 1rem;
   }
-
-  @media screen and (max-width: 285px) {
-    h1 {
-      font-size: 1.2rem;
-    }
+  .bold {
+    font-size: 1.25rem;
   }
-
-  @media screen and (min-width: 900px) {
-    main {
-      margin-top: 7rem;
-    }
-    header {
-      position: fixed;
-      width: 100%;
-      top: 0;
-    }
-    .mobile-nav{
-      display: none;
-    }
-    .desktop-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row;
-      background-color: #1f48d4;
-      height: 4rem;
-    }
-    .desktop-nav h1,
-    .desktop-nav a {
-      color: white;
-      padding: 1rem;
-    }
-    .searchForm {
-      flex-direction: row;
-    }
-    .search__Btn {
-       width: 20%;
-    }
-    h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
-    
-    }
-    a:focus {
-      border: 0.1rem solid white;
-    }
-    /*h1 {
-      font-size: 2rem;
-      margin-right: 6rem;
-    }*/
-    
-    h2 button {
-      padding: 1rem 0;
-      font-size: 1.5rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    p {
-      margin: 1rem;
-      padding: 1rem;
-      font-size: 1.25rem;
-      width: 60%;
-      border-left: 0.15rem solid #1f48d4;
-    }
-    .icons img {
-      height: 3rem;
-    }
-    .para a {
-      margin-left: 1rem;
-    }
-    .bold {
-      font-size: 1.25rem;
-    }
-    .menu__box {
-      width: 300px;
-     }
-    .menu__item {
-      font-size: 1.5rem;
-    }
-    main h2 {
-      font-size: 1.5rem;
-    }
+  .menu__box {
+    width: 300px;
   }
+  .menu__item {
+    font-size: 1.5rem;
+  }
+  main h2 {
+    font-size: 1.5rem;
+  }
+}
   

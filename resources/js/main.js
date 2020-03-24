@@ -11,14 +11,29 @@
 			}
 		})
 	})()
+
 let body = document.querySelector('body');
+let nav = document.querySelector('nav');
 let menuBtn = document.querySelector('.menu__btn');
 let menuItem = document.querySelector('.menu__list');
-/*let h2 = document.querySelector('.collapsible-headline')
-let main = document.querySelectorAll('main')*/
-
+let searchInput = document.querySelector('input');
+let searchButton = document.querySelector('.search__btn');
 let checked = false;
-menuBtn.addEventListener('click', () => {
+
+function changeMenu() {
+	let windowWidth = window.innerWidth;
+	if (windowWidth > 900) {
+		nav.setAttribute('class', 'desktop-nav');
+		menuBtn.style.display = 'none';
+		menuItem.style.display = 'flex';
+	} else {
+		nav.removeAttribute('class', 'desktop-nav');
+		menuBtn.style.display = 'block';
+		menuItem.style.display = 'none';
+	} 
+}
+
+function checkedMenu() {
 	if (!checked) {
 		menuItem.style.display = 'flex';
 		menuBtn.style.backgroundColor = 'white';
@@ -30,17 +45,15 @@ menuBtn.addEventListener('click', () => {
 		menuBtn.style.color = 'white';
 		checked = false;
 	}  
-})
-let searchInput = document.querySelector('input');
-let searchButton = document.querySelector('.search__btn');
+}
 
-searchButton.addEventListener('click', () => {
-    fetch("./resources/catalog/catalog.json")
+function searchBooks() {
+	fetch("./resources/catalog/catalog.json")
         .then((response) => {
             return response.json()
         })
         .then((data) => {
-            let result = (data['books'].join().toLowerCase().includes(searchInput.value.toLowerCase()))
+            let result = (data['books'].join().toLowerCase().includes(searchInput.value.toLowerCase().trim()))
             if (result) {
                 alert('Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам');
             } else {
@@ -49,16 +62,10 @@ searchButton.addEventListener('click', () => {
         })
         .catch((e) => {
             console.log(e)
-        })
-})
-/*let date = new Date();
-let hour = date.getHours();
-function changeTheme(hour) {
-	if (hour > 18 || hour < 7) {
-		body.style.backgroundColor = 'black';
-		body.style.color = 'white';
-		h2.style.color = 'white';
-		para.style.backgroundColor = 'black';
-	}
+		})
 }
-changeTheme(hour)*/
+
+searchButton.addEventListener('click', searchBooks)
+menuBtn.addEventListener('click', checkedMenu);
+window.addEventListener('resize', changeMenu);
+document.onload = changeMenu()
