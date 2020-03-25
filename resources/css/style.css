@@ -61,6 +61,7 @@ header {
   flex-direction: column;
   background-color: #1f48d4;
   align-items: center;
+  margin: 0.5rem;
 }
 .searchLabel {
   padding: 1rem;
@@ -83,7 +84,7 @@ h2 {
   font-size: 1.5rem;
 }
 main {
-  margin-top: 4.5rem;
+  margin: 4.5rem 1.5rem 0 1.5rem;
 }
 p {
   margin: 0.5rem;
@@ -92,7 +93,7 @@ p {
 }
 .para {
   background-color: rgb(230, 183, 64);
-  padding: 0.8rem;
+  padding: 1rem;
 }
 .para a {
   width: fit-content;
@@ -111,16 +112,14 @@ span, a {
   color: black;
   text-decoration: none;
 }
-main h2 {
-  margin: 1rem;
-}  
+  
 h2 button {
   all: inherit;
   border-bottom: 0.15rem solid #1f48d4;
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  padding: 0.5rem 0;
+  width: 100%;
+  padding: 1rem 0;
 }
 h2 button:focus svg {
   outline: 2px solid;
