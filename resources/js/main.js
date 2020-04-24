@@ -17,6 +17,7 @@ let body = document.querySelector('body');
 let searchInput = document.querySelector('input');
 let searchButton = document.querySelector('.search__btn');
 
+let searchResults = document.querySelector('#searchResults')
 
 
 
@@ -27,11 +28,12 @@ function searchBooks() {
         })
         .then((data) => {
             let result = (data['books'].join().toLowerCase().includes(searchInput.value.toLowerCase().trim()))
-            if (result) {
-				alert('Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам');
+			searchResults.textContent = '';
+			if (result) {
+				searchResults.textContent = 'Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам';
 				searchInput.focus();
             } else {
-                alert('Книга не найдена');
+                searchResults.textContent = 'Книга не найдена';
             }
         })
         .catch((e) => {
