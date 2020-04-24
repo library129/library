@@ -18,6 +18,7 @@ nav button:focus {
 }
 nav button a {
   color: white;
+  font-weight: 500;
 }
 .search__btn {
   background-color: rgb(230, 183, 64);
