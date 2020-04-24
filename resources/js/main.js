@@ -39,5 +39,7 @@ function searchBooks() {
 		})
 }
 
-searchButton.addEventListener('click', searchBooks)
-
+searchButton.addEventListener('click', (event) => {
+	event.preventDefault();
+	searchBooks();
+})
