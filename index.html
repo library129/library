@@ -30,7 +30,7 @@
 <body>
     <header>
       <h1>Библиотека 129</h1>
-      <nav>
+      <nav role="navigation">
           <a title="Оплата услуг в библиотеке 129" class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener noreferrer" >Оплата</a>
           <a class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
           <a class="menu__item" href="tel:84953452100">Позвонить</a>
@@ -73,9 +73,9 @@
 		<div hidden class="para">
 			<p>Для <span class="bold">продления</span> или <span class="bold">бронирования</span> книг <span class="bold">напишите</span> нам на электронную почту письмо или <br> <span class="bold">позвоните</span> по номеру телефона (потребуется указать <span class="bold">ФИО</span> или номер <span class="bold">единого читательского билета (ЕЧБ).</span>)</p>
       <p>Для <span class="bold">поиска книг в фонде библиотеки</span> используйте форму ниже<br><br></p>
-      <form class="searchForm">
+      <form role="search" class="searchForm">
         <label class="searchLabel" for="search">Введите фамилию автора или название книги:</label>
-        <input class="searchInput" type="text" id="search" >
+        <input class="searchInput" type="search" placeholder="Пушкин или Евгений Онегин" aria-label="Поле поиска книги в фонде библиотеку id="search" >
         <button class="search__btn">Найти книгу</button>
         <p id="searchResults" role="alert" aria-relevant="all"></p>  
       </form>
