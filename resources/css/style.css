@@ -11,19 +11,19 @@ nav {
   margin-top: 0.5rem;
 }
 nav a {
-  margin: 0.2rem;
+  margin: 0.5rem;
   background-color: #1f48d4;
-  border: 2px solid black;
+  border: 3px solid #1f48d4;
   color: white;
   font-weight: 500;
-  padding: 0.3rem 0.4rem;
+  padding: 0.5rem 0.8rem;
 }
 nav a:focus {
-  border-color: rgb(230, 183, 64);
+  border-color: black;
 }
 .search__btn {
   background-color: rgb(230, 183, 64);
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   margin: 0.5rem;
   width: 90%;
@@ -33,47 +33,48 @@ nav a:focus {
   flex-direction: column;
   background-color: #1f48d4;
   align-items: center;
-  margin: 0.5rem;
 }
 .searchLabel {
-  padding: 1rem;
-  font-size: 1.2rem;
-  align-self: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
   color: white;
 }
 .searchInput {
-  height: 2rem;
   align-self: center;
   width: 90%;
   font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.search__btn:focus {
+  border-color: black;
 }
 h1 {
-  font-size: 1.8rem;
-  padding: 0.3rem;
+  font-size: 2rem;
+  padding: 0.5rem;
   font-weight: 600;
   background-color: #1f48d4;
   color: white;
   text-align: center;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 main {
-  margin: 2.5rem 1.5rem 0 1.5rem;
+  margin: 2rem 0.3rem 0 0.3rem;
 }
 p {
-  margin: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: normal;
 }
 .para {
   background-color: rgb(230, 183, 64);
-  padding: 1rem;
+  padding: 0.25rem;
 }
 .para a {
   width: fit-content;
   font-weight: normal;
-  margin-top: 1rem;
+  padding: 0.5rem;
   text-decoration: underline;
   color: #1f48d4;
 }
@@ -81,7 +82,7 @@ p {
   font-weight: bold;
 }
 span, a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: normal;
   font-weight: 200;
   color: black;
@@ -131,16 +132,11 @@ button svg {
   height: 4rem;
 }
 @media screen and (min-width: 900px) {
-
-  .searchForm {
-    flex-direction: row;
-    justify-content: space-around;
-  }
   .searchInput {
     width: 50%;
   }
   .search__btn {
-    width: 20%;
+    width: 50%;
   }
   a:focus {
     border: 0.1rem solid white;
@@ -152,10 +148,8 @@ button svg {
     cursor: pointer;
   }
   p {
-    margin: 1rem;
     padding: 1rem;
-    font-size: 1.25rem;
-    width: 60%;
+    width: 50%;
     border-left: 0.15rem solid #1f48d4;
   }
   .icons img {
