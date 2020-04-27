@@ -11,36 +11,36 @@
 			}
 		})
 	})()
+
 let body = document.querySelector('body');
-let menuBtn = document.querySelector('.menu__btn');
-let menuItem = document.querySelector('.menu__list');
-/*let h2 = document.querySelector('.collapsible-headline')
-let main = document.querySelectorAll('main')*/
 
-let checked = false;
-menuBtn.addEventListener('click', () => {
-	if (!checked) {
-		menuItem.style.display = 'flex';
-		menuBtn.style.backgroundColor = 'white';
-		menuBtn.style.color = 'black';
-		checked = true;
-	} else {
-		menuItem.style.display = 'none';
-		menuBtn.style.backgroundColor = 'rgb(230, 183, 64)';
-		menuBtn.style.color = 'white';
-		checked = false;
-	}  
-})
-function covid() {
 
-/*let date = new Date();
-let hour = date.getHours();
-function changeTheme(hour) {
-	if (hour > 18 || hour < 7) {
-		body.style.backgroundColor = 'black';
-		body.style.color = 'white';
-		h2.style.color = 'white';
-		para.style.backgroundColor = 'black';
-	}
+let searchInput = document.querySelector('input');
+let searchButton = document.querySelector('.search__btn');
+
+let searchResults = document.querySelector('#searchResults')
+
+function searchBooks() {
+	fetch("./resources/catalog/catalog.json")
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            let result = (data['books'].join().toLowerCase().includes(searchInput.value.toLowerCase().trim()))
+			searchResults.textContent = '';
+			if (result) {
+				searchResults.textContent = 'Книга найдена в фонде библиотеки. Для бронирования книги позвоните или напишите нам';
+				searchInput.focus();
+            } else {
+                searchResults.textContent = 'Книга не найдена';
+            }
+        })
+        .catch((e) => {
+            console.log(e)
+		})
 }
-changeTheme(hour)*/
+
+searchButton.addEventListener('click', (event) => {
+	event.preventDefault();
+	searchBooks();
+})

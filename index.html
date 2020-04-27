@@ -24,28 +24,16 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-144592465-3');
+        alert('Дорогие читатели! С 25 марта библиотеки Юго-Востока временно закрыты*. Эта мера связана с противодействием распространению на территории Москвы новой коронавирусной инфекции. Библиотеки ЮВАО остаются на связи: на сайте cbsuvao.ru и в социальных сетях публикуются вебинары, лекции, мастер-классы и многие другие активности, которые не дадут скучать в самоизоляции. Также просим связаться с библиотекой для уточнения продления сроков возврата книг. Берегите себя и своих близких, оставайтесь дома. *Во исполнение указа Мэра Москвы от 16 марта 2020 г. №21-УМ «О внесении изменения в указ Мэра Москвы от 5 марта 2020 г. № 12-УМ»')
     </script>
 </head>
 <body>
     <header>
-      <nav class="desktop-nav">
-        <h1>Библиотека 129</h1>
-        <a class="menu__item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJZZrQ2mhaY1Lnhg8Tq8jjIju-aEQg60SZhEGvEBS9oug3J8tYwuJ0Z8bSjRQNSl0QEw8TIlXkAq0Q/pubhtml" target="_blank" rel="noopener" >Каталог</a>
-        <a class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener" >Оплата услуг</a>
-        <a class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
-        <a class="menu__item" href="tel:84953452100">Позвонить</a>
-      </nav>
-      <nav class="mobile-nav">
-        <div class="menu__title">
-          <h1>Библиотека 129</h1>
-          <button class="menu__btn">Меню</button>
-        </div>
-          <div class="menu__list">
-            <a class="menu__item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJZZrQ2mhaY1Lnhg8Tq8jjIju-aEQg60SZhEGvEBS9oug3J8tYwuJ0Z8bSjRQNSl0QEw8TIlXkAq0Q/pubhtml" target="_blank" rel="noopener noreferrer" >Каталог</a>
-            <a class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener noreferrer" >Оплата</a>
-            <a class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
-            <a class="menu__item" href="tel:84953452100">Позвонить</a>
-          </div>
+      <h1>Библиотека 129</h1>
+      <nav role="navigation">
+          <a role="tab" aria-setsize="3" aria-posinset="1" title="Оплата услуг в библиотеке 129" class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener noreferrer" >Оплата</a>
+          <a role="tab" aria-setsize="3" aria-posinset="2" class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
+          <a role="tab" aria-setsize="3" aria-posinset="3" class="menu__item" href="tel:84953452100">Позвонить</a>
       </nav>
     </header>
     <main>
@@ -83,8 +71,15 @@
 			</button>
 		</h2>
 		<div hidden class="para">
-			<p>Для <span class="bold">продления</span> или <span class="bold">бронирования</span> книг <span class="bold">напишите</span> нам на электронную почту письмо или <span class="bold">позвоните</span> по номеру телефона. <br><br> Для этого потребуется указать <span class="bold">ФИО</span> или номер <span class="bold">единого читательского билета (ЕЧБ)</span></p>
-      <a class="menu__item" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJZZrQ2mhaY1Lnhg8Tq8jjIju-aEQg60SZhEGvEBS9oug3J8tYwuJ0Z8bSjRQNSl0QEw8TIlXkAq0Q/pubhtml" target="_blank" rel="noopener noreferrer" >Каталог</a>
+			<p>Для <span class="bold">продления</span> или <span class="bold">бронирования</span> книг <span class="bold">напишите</span> нам на электронную почту письмо или <br> <span class="bold">позвоните</span> по номеру телефона (потребуется указать <span class="bold">ФИО</span> или номер <span class="bold">единого читательского билета (ЕЧБ).</span>)</p>
+      <p>Для <span class="bold">поиска книг в фонде библиотеки</span> используйте форму ниже<br><br></p>
+      <form role="search" class="searchForm">
+        <label class="searchLabel" for="search">Введите фамилию автора или название книги:</label>
+        <input class="searchInput" type="search" placeholder="Пушкин или Евгений Онегин" aria-label="Поле поиска книги в фонде библиотеку id="search" >
+        <button class="search__btn">Найти книгу</button>
+        <p id="searchResults" role="alert" aria-relevant="all"></p>  
+      </form>
+      
     </div>
     <h2 class="collapsible-headline">
 			<button aria-expanded="false">
@@ -113,7 +108,7 @@
 			</button>
 		</h2>
 		<div hidden class="para">
-      <p><span class="bold">ВТ-СБ</span>:<br>10:00 - 22:00<br><br><span class="bold">ВС:</span><br>12:00 - 20:00<br><br><span class="bold">ПН:</span><br>Выходной<br><br><span class="bold">Последний вторник месяца:</span><br>Санитарный день</p>
+      <p><span class="bold">Вторник-суббота</span>:<br>с 10:00 до 22:00<br><br><span class="bold">Воскресение:</span><br>с 12:00 до 20:00<br><br><span class="bold">Понедельник:</span><br>Выходной<br><br><span class="bold">Последний вторник месяца:</span><br>Санитарный день</p>
     </div>
     <h2 class="collapsible-headline">
 			<button aria-expanded="false">
@@ -130,11 +125,12 @@
     </main>
     <footer>
       <div class="icons">
-        <a target="_blank" rel="noopener noreferrer" href="https://vk.com/lib_uvao_129"><img alt="пиктограмма вконтакте" src="./resources/images/vk.svg"></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/libuvao129"><img alt="пиктограмма фейсбук" src="./resources/images/facebook.svg"></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://ok.ru/group/55535218196733"><img alt="пиктограмма одноклассники" src="./resources/images/odnoklassniki.svg"></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lib_uvao_129/"><img alt="пиктограмма инстаграм" src="./resources/images/instagram.svg"></a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/MelnikovAleksei"><img alt="пиктограмма гитхаб" src="./resources/images/github.svg"></a>
+
+        <a target="_blank" rel="noopener noreferrer" href="https://vk.com/lib_uvao_129"><img alt="пиктограмма социальной сети вконтакте ссылка внещняя" src="./resources/images/vk.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/libuvao129"><img alt="пиктограмма социальной сети  фейсбук ссылка внещняя" src="./resources/images/facebook.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://ok.ru/group/55535218196733"><img alt="пиктограмма социальной сети  одноклассники ссылка внещняя" src="./resources/images/odnoklassniki.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lib_uvao_129/"><img alt="пиктограмма социальной сети  инстаграм ссылка внещняя" src="./resources/images/instagram.svg"></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/MelnikovAleksei"><img alt="пиктограмма гитхаб ссылка внещняя" src="./resources/images/github.svg"></a>
       </div>
     </footer>
     <script src="./resources/js/main.js"></script>
