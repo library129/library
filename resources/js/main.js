@@ -14,12 +14,11 @@
 
 let body = document.querySelector('body');
 
+
 let searchInput = document.querySelector('input');
 let searchButton = document.querySelector('.search__btn');
 
 let searchResults = document.querySelector('#searchResults')
-
-
 
 function searchBooks() {
 	fetch("./resources/catalog/catalog.json")
