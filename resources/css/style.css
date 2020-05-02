@@ -122,11 +122,6 @@ button svg {
 .icons img {
   height: 2rem;
 }
-
-.icons a:focus {
-
-}
-
 @media screen and (min-width: 900px) {
   .search__btn {
     width: 50%;
