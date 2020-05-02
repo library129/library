@@ -30,13 +30,35 @@
 <body>
     <header>
       <h1>Библиотека 129</h1>
-      <nav role="navigation">
-          <a role="tab" aria-setsize="3" aria-posinset="1" title="Оплата услуг в библиотеке 129" class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener noreferrer" >Оплата</a>
-          <a role="tab" aria-setsize="3" aria-posinset="2" class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
-          <a role="tab" aria-setsize="3" aria-posinset="3" class="menu__item" href="tel:84953452100">Позвонить</a>
+      <nav>
+          <a aria-setsize="3" aria-posinset="1" title="Оплата услуг в библиотеке 129" aria-label="Оплата услуг в библиотеке 129" class="menu__item" href="https://iframeab-pre1551.intickets.ru/studio/venue/10762151" target="_blank" rel="noopener noreferrer" >Оплата</a>
+          <a aria-setsize="3" aria-posinset="2" class="menu__item" title="Написать электронное письмо библиотеке" aria-label="Написать электронное письмо библиотеке" href="mailto:129a@cbsuvao.ru">Написать</a>
+          <a aria-setsize="3" aria-posinset="3" class="menu__item" title="Позвонить в библиотеку" aria-label="Позвонить в библиотеку" href="tel:84953452100">Позвонить</a>
       </nav>
     </header>
     <main>
+      <h2 class="collapsible-headline">
+        <button aria-expanded="false">
+          Книги
+          <svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+            <rect class="vert" height="8" width="2" y="1" x="4"/>
+            <rect height="2" width="8" y="4" x="1"/>
+            </svg>
+        </button>
+      </h2>
+      <div hidden class="para">
+        <p>Для продления или бронирования книг напишите нам на электронную почту письмо или
+          позвоните по номеру телефона (потребуется указать ФИО или номер единого читательского билета (ЕЧБ).)
+        </p>
+        <p>Для поиска книг в фонде библиотеки используйте форму ниже</p>
+        <form role="search" class="searchForm">
+          <label class="searchLabel" for="search">Введите фамилию автора или название книги:</label>
+          <input class="searchInput" type="search" placeholder="Пушкин или Евгений Онегин" aria-label="Поле поиска книги в фонде библиотеку id="search" >
+          <button class="search__btn">Найти книгу</button>
+          <p id="searchResults" role="alert" aria-relevant="all"></p>  
+        </form>
+        
+      </div>
 		<h2 class="collapsible-headline">
 			<button aria-expanded="false">
 				О нас
@@ -61,26 +83,6 @@
             	<p>В библиотеке используется принцип специального зонирования (есть холл, основной зал, детский зал, зона семейного чтения, многофункциональный зал,
               компьютерный зал, две зоны "тихого чтения").</p>
 		</div>
-		<h2 class="collapsible-headline">
-			<button aria-expanded="false">
-				Книги
-				<svg color="#2a4dcc" aria-hidden="true" focusable="false" viewBox="0 0 10 10">
-					<rect class="vert" height="8" width="2" y="1" x="4"/>
-					<rect height="2" width="8" y="4" x="1"/>
-			  	</svg>
-			</button>
-		</h2>
-		<div hidden class="para">
-			<p>Для <span class="bold">продления</span> или <span class="bold">бронирования</span> книг <span class="bold">напишите</span> нам на электронную почту письмо или <br> <span class="bold">позвоните</span> по номеру телефона (потребуется указать <span class="bold">ФИО</span> или номер <span class="bold">единого читательского билета (ЕЧБ).</span>)</p>
-      <p>Для <span class="bold">поиска книг в фонде библиотеки</span> используйте форму ниже<br><br></p>
-      <form role="search" class="searchForm">
-        <label class="searchLabel" for="search">Введите фамилию автора или название книги:</label>
-        <input class="searchInput" type="search" placeholder="Пушкин или Евгений Онегин" aria-label="Поле поиска книги в фонде библиотеку id="search" >
-        <button class="search__btn">Найти книгу</button>
-        <p id="searchResults" role="alert" aria-relevant="all"></p>  
-      </form>
-      
-    </div>
     <h2 class="collapsible-headline">
 			<button aria-expanded="false">
 				Контакты
@@ -91,12 +93,15 @@
 			</button>
 		</h2>
 		<div hidden class="para">
-      <p><span class="bold">Телефон:</span><br><br>+7 (495) 345-21-00</p>
-      <a class="menu__item" href="tel:84953452100">Позвонить</a>
-      <p><span class="bold">Email:</span><br><br>129a@cbsuvao.ru</p>
-      <a class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
-      <p><span class="bold">Адрес:</span><br><br>Перерва, 56/2</p>
-      <a class="menu__item" rel="noopener" target="_blank" href="https://goo.gl/maps/VpZTPt4LB1ykJNQ17">Карты</a>
+      <p>Телефон:</p>
+      <p title="Телефон библиотеки" aria-label="Телефон библиотеки">+7 (495) 345-21-00</p>
+      <a title="Позвонить в библиотеку" aria-label="Позвонить в библиотеку" class="menu__item" href="tel:84953452100">Позвонить</a>
+      <p>Email:</p>
+      <p title="Электронная почта библиотеки" aria-label="Электронная почта библиотеки">129a@cbsuvao.ru</p>
+      <a title="Написать электронное письмо библиотеке" aria-label="Написать электронное письмо библиотеке" class="menu__item" href="mailto:129a@cbsuvao.ru">Написать</a>
+      <p>Адрес:</p>
+      <p title="Адрес библиотеки" aria-label="Адрес библиотеки">Перерва, 56/2</p>
+      <a title="Посмотреть адрес библиотеки на карте" aria-label="Посмотреть адрес библиотеки на карте" class="menu__item" rel="noopener" target="_blank" href="https://goo.gl/maps/VpZTPt4LB1ykJNQ17">Карты</a>
     </div>
     <h2 class="collapsible-headline">
 			<button aria-expanded="false">
