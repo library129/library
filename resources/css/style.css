@@ -98,7 +98,7 @@ h2 button:focus svg {
 }
 button svg {
   height: 1em;
-  margin-left: 0.5em;
+  margin: 0 0.5rem 0 0.25rem;
 }
 [aria-expanded="true"] .vert {
   display: none;
