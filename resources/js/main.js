@@ -12,9 +12,6 @@
 		})
 	})()
 
-let body = document.querySelector('body');
-
-
 let searchInput = document.querySelector('input');
 let searchButton = document.querySelector('.search__btn');
 
