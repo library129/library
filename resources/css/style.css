@@ -5,8 +5,13 @@ body {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-top: 0.5rem;
 }
@@ -35,9 +40,16 @@ nav a:focus, a:focus {
   color: #000000;
 }
 .searchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ff0000;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .searchLabel {
@@ -46,6 +58,7 @@ nav a:focus, a:focus {
   color: white;
 }
 .searchInput {
+  -ms-flex-item-align: center;
   align-self: center;
   width: 90%;
   font-size: 1.5rem;
@@ -87,7 +100,11 @@ p {
 h2 button {
   all: inherit;
   border-bottom: 0.15rem solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   margin: 0.5rem 0;
@@ -112,7 +129,10 @@ button svg {
   fill: currentColor;
 }
 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 1rem 0 1rem 0;
 }
