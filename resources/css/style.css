@@ -53,7 +53,7 @@ nav a:focus, a:focus {
   align-items: center;
 }
 .searchLabel {
-  padding: 0.5rem;
+  margin: 1rem;
   font-size: 1.5rem;
   color: white;
 }
@@ -70,8 +70,8 @@ nav a:focus, a:focus {
   color: #2a4dcc;
   text-decoration: underline;
 }
-.searchResults {
-  margin: 1.5rem;
+#searchResults {
+  margin: 1rem;
 }
 h1 {
   font-size: 2rem;
